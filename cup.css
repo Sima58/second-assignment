@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
  body{
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
  }
  /* Top Side */
@@ -9,8 +11,6 @@
  }
  .footboller{
     background-color: black;
-    width: 1240px;
-    height: 637px;
     border-radius: 30px;
     display: flex;
     align-items: center; 
@@ -71,7 +71,7 @@
     padding-right: 20px;
     
 }
-.btn{
+.btn, .btn-grp{
     width: 250px;
     height: 60px;
     border-radius: 10px;
@@ -153,3 +153,81 @@ hr{
     font-size: 16px;
 }
 
+/* Mobile Device */
+ @media only screen and (max-width: 688px) {
+    .top-side{
+        margin: 0;   
+    } 
+    .details{
+        margin-top: 30px;
+        margin-right: 80px;
+    }
+    .footboller{
+        margin: 15px;
+        border-radius: 8px;
+        flex-direction: column;
+        height: 500px;
+    }
+    .title{
+      font-size: 19px;
+      line-height: 25px;
+      text-align: center;
+    }
+    .text{
+        font-size: 8px;
+        text-align: center;
+    }
+    .img .man{
+        width: 200px;
+        height: 200px;
+        margin: 0;
+        padding-left: 20px ;
+        padding-top: 2px;
+    }
+    .down-side{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        align-items: centers;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .MGB{
+        padding-right: 0px;
+        margin-left: 48px;
+        background-color: white;
+        border: #373737;
+    }
+    .btn, .btn-grp{
+        background-color: white;
+    }
+    .btn-cng, .btn-grp{
+        width: 200px;
+        margin-left: 45px;
+    }
+    .blog{
+        width: 335px;
+        height: 350px;
+    }
+    .blog-image{
+        width: 335px;
+    }
+    .ftr-para{
+        flex-direction: column;
+        padding-left: 0;
+        margin-right: 50px;
+    }
+    .footer{
+        padding: 0%;
+    }
+    .footer h2{
+       padding-top: 30px;
+    }
+    hr{
+        margin: 0px 30px;
+        opacity: 0.5;
+    }
+}
