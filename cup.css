@@ -160,16 +160,19 @@ hr{
     } 
     .details{
         margin-top: 30px;
-        margin-right: 80px;
+        margin-left: 0;
     }
     .footboller{
-        margin: 15px;
-        border-radius: 8px;
+        border-radius: 10px;
+        margin: 20px;
+        height: 450px;
         flex-direction: column;
-        height: 500px;
+    }
+    .button{
+        margin-left: 60px;
     }
     .title{
-      font-size: 19px;
+      font-size: 20px;
       line-height: 25px;
       text-align: center;
     }
@@ -231,3 +234,67 @@ hr{
         opacity: 0.5;
     }
 }
+
+/* ---------
+    ipad 
+------------*/
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .top-side{
+        margin-left: 30px;
+        padding-right: 50px;
+        margin-top: 60px; 
+    }
+    .footboller{
+        width: 1270px;
+    }  
+    .down-side{
+        flex-direction: column;
+        margin: 0;
+    }  
+    .MGB{
+        display: flex;
+        background-color: white;
+        width: 1200px;
+        height: 0;
+        padding: 0;
+        margin-left: 180px;
+        padding-bottom: 200px;
+    }
+    .btn, .btn-cng, .btn-grp{
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+        margin-left: 65px;
+        margin-bottom: 100px;
+    }
+    .blog{
+        width: 500px;
+        height: 500px;
+        margin-left: 60px;
+    }
+    .blog-image{
+        width: 500px; 
+    }
+    .blog-details{
+        width: 500px;
+        height: 200px;
+        font-size: 20px;
+        padding-left: 20px;
+        padding-top: 15px;
+    }
+    .footer{
+       width: 1250px;
+    }
+    .ftr-para{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+        padding-left: 250px;
+        margin-right: 250px;
+    }
+} 
